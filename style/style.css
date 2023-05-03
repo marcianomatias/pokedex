@@ -5,22 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: rgb(190, 206, 221);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    background-color: rgb(190, 206, 221);
+body {
+    background-color: #d6d6d6;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -31,14 +17,15 @@ body{
 #pokedex {
     width: 22rem;
     height: 35rem;
-    background-color: rgba(116, 203, 72);
+    background-color: rgb(116, 203,  72);
     border-radius: 8px;
-    padding: .3rem;
+    padding: 0.3rem;
+    transition: background-color 0.5s ease-in-out;
 }
 
 #top {
     height: 40%;
-    padding: .5rem;
+    padding: 0.5rem;
     background: url('../images/pokeball.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -48,9 +35,8 @@ body{
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 0 1rem;
+    padding: 0 1.2rem;
 }
-
 
 #search {
     color: white;
@@ -58,7 +44,8 @@ body{
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
-    width: 70%;
+    width: 60%;
+    text-transform: capitalize;
 }
 
 #search:focus {
@@ -70,7 +57,7 @@ body{
     justify-content: center;
 }
 
-#pokemom-image {
+#pokemon-image {
     width: 200px;
     height: 200px;
     transform: translateY(3.5rem);
@@ -92,23 +79,23 @@ body{
     gap: 1rem;
 }
 
-.type {    
+.type {
     color: white;
+    padding: 0.3rem 0.6rem;
     border-radius: 20px;
-    padding: .3rem .6rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 #data h4 {
     text-align: center;
-    color: rgb(116, 203, 72);
 }
 
 #stats {
     width: 80%;
     font-size: 0.8rem;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .stat-row {
@@ -116,36 +103,44 @@ body{
 }
 
 .stat-desc, .stat-number {
-    width: 20%;
+    width: 13%;
 }
 
 .stat-desc {
-    color: rgb(116, 203, 72);
+    color:  rgb(116, 203, 72);
     font-weight: bold;
     text-align: right;
-    padding-right: 0.6rem;
-    border-right: 1px solid rgb(121, 117, 117);
+    margin-right: 0.6rem;
+    transition: color 0.5s ease-in-out;
 }
 
 .stat-number {
-    padding-left: 0.6rem;
+    border-left: 1px solid gray;
+    text-align: right;
 }
 
 .stat-bar {
-    width: 60%;
+    width: 76%;
     display: flex;
     align-items: center;
+    padding-left: 0.6rem;
 }
 
 .bar-outer {
-    background-color: rgba(65, 131, 32, 0.312);
+    background-color: rgba(116, 203, 72, 0.3);
     display: flex;
     width: 100%;
     height: 0.3rem;
     border-radius: 4px;
+    transition: 0.5s ease-in-out;
 }
 
 .bar-inner {
     background-color: rgb(116, 203, 72);
     border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+#base-stats {
+    transition: color 0.5s ease-in-out;
 }
